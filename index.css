@@ -4,39 +4,63 @@ body {
     background: #1F2937
 }
 
-h1 {
-    font-size: 40px;
+h1, h2 {
+    font-size: 2em;
     width: 400px;
 }
 
-#title1 {
+.title1 {
     color: #ffff;
     margin: 100px 0 0 0;
-    
-    
 }
 
-#title2 {
+.title2 {
     color: #4ADF86;
     margin: -10px 0 0 0;
 }
 
-h2 {
+h3 {
     padding-top: 10px;
     color: #D5D4D8;
-    font-size: 20px;
+    font-size: 1.25em;
 }
     
 button {
     background: #10B981;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     border-radius: 10px;
     border: none;
     margin-top: 60px;
+    margin-left: 10px;
     padding: 10px 16px 15px 10px;
-    color: white;
-    font-size: 15px;
-      
+    color: #10171E;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5DEF92;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    height: 36px;
+    padding: 10px 16px 15px 10px;
+    background-color: whitesmoke;
+    text-align: start;
+    margin-left: 5px;
+}
+
+label, #strength-result {
+    color: #5DEF92;
+}
+
+labe {
+    display: block;
 }
 
 hr {
@@ -59,12 +83,31 @@ hr {
     width: 250px;
     height: 25px;
     text-align: center;
-    margin: 0 40px 0 0;
+    margin: 0 40px 50px 0;
     padding: 10px;
     color: #5DEF92;
-    
 }
 
-#generate:hover {
-    background-color: #5DEF92;
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    #passwords {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    hr {
+        max-width: 100%;
+    }
 }
