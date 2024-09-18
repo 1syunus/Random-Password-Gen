@@ -64,9 +64,9 @@ document.getElementById("generate-btn").addEventListener("click", function() {
     //Clear previous
     clearPasswords()    
 
-    // Validate length between 8 and 128
-    if (isNaN(length) || length < 8 || length > 128) {
-        showError("Password length must be between 8 and 128 characters")
+    // Validate length between 8 and 16
+    if (isNaN(length) || length < 8 || length > 16) {
+        showError("Password length must be between 8 and 16 characters")
         return
     }
 
